@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    background-color: #e0ffcd;
+}
+
+/* Navbar Section */
+
+#navbar{
+    display: flex;  /* bu özellik aynı ıd yada aynı class içindeki etiketlerin yanyana gelmesini sağlar.*/
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 12px; /* ustten ve alttan 0 sağdan ve soldan 12px boşluk verir */
+    height: 70px; 
+}
+
+#navbar ul {
+
+    list-style-type: none ; /* listelerin başındaki noktaların silinmesini sağlar. */
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a{
+    padding: 0 40px;
+
+}
+
+#navbar ul li a:hover {
+    color: #2e94b9;  /* a:hover yani a ların üzerine geldiğinde demek */
+    border-radius: 6px; /* kenarlarının ovalleşmesini sağlar. */
+}
+
+
+#navbar h1{
+    padding: 0 50px;
+
+}
+
+.container {
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#home img{
+    width: 500px;
+    height: auto;  /* heighta auto verirsen kendini weighte uygun şekilde oranlar */
+    border-radius: 100%; /* 100% verirsek kendini heighta uygun şekilde ovaller */
+
+}
+
+/*Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 32px;
+    border-bottom: 1px solid gray; /*borderin alt kısmını etkiler */
+}
+
+.heading{
+    font-size: 1.75rem;
+}
+
+#home .name{
+
+    text-align: center;
+}
+
+#home .name h2{
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#home .name p{
+    opacity: 0.6; /* yazının opaklaşmasını yani silinik olmasını sağlar. */
+    font-style: italic;
+}
+
+#home a{
+    margin-top: 1.25rem;
+    background-color: #a2a8d3;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px; /*yazıların arasını açar */
+}
+
+#home a:hover{
+    color: #fff;
+    
+}
+
+#training{
+
+    padding: 1rem;
+    
+}
+
+.btn{
+    background-color: #fdffab;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+    color: black;
+
+}
+
+h3{
+    text-align: center;
+}
+
+#training .items{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#training .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+
+}
+
+#training .items .item:hover{
+    color: #2e94b9;
+}
+
+.course-image img{
+    width: 300px;
+    height: auto;
+    margin-right: 00.5rem;
+    border-radius: 5px;
+}
+
+#courses{
+    color: #333;
+    padding: 1rem;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.courses .course{
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.courses .course .course-image{
+
+    margin-right: 0.5rem;
+    position: relative;
+
+
+}
+.courses .course .course-image span{
+    background: tomato ;
+    padding: 0.25rem;
+    color: black;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.courses .course .course-info .title{
+
+    letter-spacing: 1.2px;
+   font-weight: 700;
+   margin-bottom: 0.25rem;
+
+}
+
+.courses .course .course-info .description{
+
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+  
+
+}
+
+.courses .course .course-info .instructor{
+
+  font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+  
+
+}
+
+.courses .course .course-info .rating{
+
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+
+}
+
+.baslık{
+    text-align: center;
+}
+
+
+
+
